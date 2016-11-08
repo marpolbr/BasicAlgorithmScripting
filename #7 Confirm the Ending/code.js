@@ -1,13 +1,9 @@
 
 function confirmEnding(str, target) {
+
   str = str.substring(str.length - target.length);
-  if(str===target){
-    return true;
-  }
-  else{
-    return false;
-  }
   
+  return str===target;
 }
 
 confirmEnding("He has to give me a new name", "name");
